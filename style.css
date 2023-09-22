@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=MuseoModerno:wght@700&family=Open+Sans:wght@300&display=swap');
+body{
+    background-color: #F3F6FB;
+    min-height: 100vh;
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+body > div{
+    min-height: 100vh;
+    background-color: transparent;
+}
+.landingPage{
+    background: url("./img/Group\ 76.svg");
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position: -43px -283px ;
+    display: flex;
+    flex-direction: column;
+}
+.landingPage nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+.landingPage nav img{
+    width: 60px;
+}
+.landingPage nav .page{
+    display: flex;
+    gap: 40px;
+}
+.landingPage nav .page a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.landingPage .introWrap{
+    display: flex;
+    /* margin: auto 0; */
+    justify-content: space-between;
+    /* margin-top: 30px; */
+}
+.landingPage .introWrap >.intro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    margin-left: 4%;  
+    max-width: 42%;
+    margin-top: 80px;
+}
+.landingPage .introWrap >.intro h1{    
+    font-size: 74px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+.landingPage .introWrap >.intro p{
+    margin: 0;
+    font-size: 15px;
+}
+.landingPage .introWrap >.intro div{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+}
+.landingPage .introWrap >.intro div >button{
+    padding: 15px;
+    border: none;
+    color: white;
+    background: #4487FF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #2C1DAD29;
+    border-radius: 38px;
+}
+
+.landingPage .introWrap >img{
+    height: 400px;
+    position: relative;
+    left: -100px;
+}
+.about{
+    position: relative;
+    height: 200vh;
+    top: -150px;
+    background: url("./img/Group\ 75.svg");
+    background-repeat: no-repeat;
+    background-size:165%;
+    background-position: 40% 10% ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about .services{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 150px;
+}
+.about .services .intro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 50px;
+}
+.about .services .intro h4,.funtions >.intro >h4{
+    color: #FF6752;
+    font-size: 28px;
+    font-family: 'Comfortaa', Bold;
+    margin: 0;
+}
+.about .services .intro p ,.funtions >.intro >p{
+    margin: 0;
+    width: 340px;
+    font-size: 15px;
+}
+.about .services .intro h6 ,.funtions >.intro >h6{
+    color: #FF6752;
+    font-size: 15px;
+    font-family: 'Comfortaa', Bold;
+    margin: 0;
+}
+.about .services .intro button,.funtions >.intro>button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #808080;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 40px;
+    border: none;
+    width: 200px;
+}
+.about .services .intro button img ,.funtions >.intro>button >img{
+    height: 40px;
+    margin-left: auto;
+}
+.about .services .serviceImage{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 25%;
+    position: relative;
+    top: 50px;
+}
+.about .services .serviceImage >div,.funtions > .blocks >div{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 20px;
+    padding: 20px 15px;
+    width: 120px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.about .services .serviceImage >div >img,.funtions > .blocks >div>img{
+    height: 80px;
+    width: 80px;
+}
+.about .services .serviceImage >div >p,.funtions > .blocks >div >p{
+    font-size: 15px;
+    margin: 0;
+}
+.about .reviewsWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    gap: 50px;
+}
+.about .reviewsWrap h3{
+    text-align: center;
+    font: normal normal bold 28px/64px Comfortaa;
+    max-width: 40%;
+    color: #FF6752;
+    position: relative;
+    left: 80px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.about .reviewsWrap >.reviews{
+    display: flex;   
+}
+.about .reviewsWrap >.reviews > div{
+    border-radius: 20px;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.about .reviewsWrap >.reviews .orangeBox{
+    background-color: #FD6845;
+    height: 250px;
+    top: 30px;
+    mix-blend-mode: multiply;
+}
+.about .reviewsWrap >.reviews .one{
+    left: 100px ;
+    padding-right: 105px;
+}
+.about .reviewsWrap >.reviews .three{
+    left: -100px;
+    padding-left: 105px;
+}
+.about .reviewsWrap >.reviews .blueBox{
+    background-color: #4487FF;
+    z-index: 1;
+    height: 300px;
+}
+.about .reviewsWrap >.reviews > div >img{
+    height: 50px;
+    width: 50px;
+}
+.about .reviewsWrap >.reviews > div >h6{
+    font-size: 15px;
+    margin: 0;
+    margin-top: 20px;
+}
+.funtions{
+    height: 100vh;
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    background: url("./img/Group\ 85.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 180% 10%;
+}
+.funtions >.blocks{
+    background: url("./img/Path\ 248.svg");
+    width: 400px;
+    background-size: 73%;
+    height: 400px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 55px;
+}
+.funtions >.blocks> .one{
+    position: relative;
+    top: -30px;
+   
+}
+.funtions >.blocks >.two{
+    margin-left: auto;
+    position: relative;
+    right: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.funtions >.intro{
+    position: relative;
+    left: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.funtions >.intro>button>p{
+    margin: auto;
+}
+.comunity{
+    background: url("./img/Group\ 96.svg");
+    background-repeat: no-repeat;
+    background-position: -30% -30%;
+    position: relative;
+    top: -50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comunity >div{
+    background-color: #4487FF;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    gap: 20px;
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+    left:50px;
+}
+.comunity >div>img{
+    height: 300px;
+    width: 300px;
+}
+.comunity >div >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.comunity >div >div >h4{
+    text-align: left;
+    font: normal normal bold 48px/64px Comfortaa;
+    letter-spacing: 0px;
+    color: #FFE530;
+    font-size: 25px;
+    margin: 0;
+}
+.comunity >div >div p{
+    margin: 0;
+    font-size: 17px;
+}
+.comunity >div >div button{
+    width: 100px;
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+    color: #FE6845;
+    font: normal normal bold 13px/27px Open Sans;
+}
+.comunity > img{
+    width: 70%;
+    height: 70px;
+    margin: auto;
+}
+footer{
+    background: url("./img/Ellipse\ 19.svg");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 50% -0%;
+    position: relative;
+    display: flex;
+    min-height: 350px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+footer  h6{
+    margin: 0;
+    color: #FFE530;
+    font-size: 14px;
+    height: 20px;
+}
+footer p{
+    margin: 0;
+    max-width: 220px;
+}
+footer .last{
+    padding-top: 45px;
+}
+footer >div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer button{
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    border: none;
+}
+footer button p{
+    margin-left: 10px;
+    color: #808080;
+}
+footer button img{
+    height: 40px;
+    margin-left: auto;
+}
+footer div >img{
+    background-color: white;
+    padding: 3px;
+    border-radius: 50px;
+    margin: 10px;
+    height: 25px;
+}
