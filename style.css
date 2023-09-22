@@ -353,7 +353,7 @@ footer p{
     max-width: 220px;
 }
 footer .last{
-    padding-top: 45px;
+    /* padding-top: 25px; */
 }
 footer >div{
     display: flex;
